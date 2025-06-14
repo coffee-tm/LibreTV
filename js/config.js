@@ -75,7 +75,8 @@ const API_SITES = {
         detail: 'https://jszyapi.com', 
     },
     dbzy: {
-        api: 'https://dbzy.tv/api.php/provide/vod',
+        api:'https://api.souavzy.vip/api.php/provide/vod/',
+        det: 'https://dbzy.tv/api.php/provide/vod',
         name: '豆瓣资源',
     },
     mozhua: {
@@ -139,7 +140,7 @@ const API_SITES = {
         adult: true
     },
     souav: {
-        api: 'https://api.souavzy.vip',
+        api: 'https://api.souavzy.vip/api.php/provide/vod/',
         name: 'souav资源',
         adult: true
     },
