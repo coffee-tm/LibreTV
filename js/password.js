@@ -69,7 +69,7 @@ async function verifyPassword(password) {
 // 验证状态检查
 function isPasswordVerified() {
     try {
-        if (!isPasswordProtected()) return true;
+        if (isPasswordProtected()) return true;
 
         const stored = localStorage.getItem(PASSWORD_CONFIG.localStorageKey);
         if (!stored) return false;
