@@ -6,8 +6,7 @@
  */
 function isPasswordProtected() {
     // 只检查普通密码
-    //const pwd = window.__ENV__ && window.__ENV__.PASSWORD;
-    const pwd = '6a08a30e58c93b26fcff3c2aaabe51c84c93b40e297544ff151c24af62e7c868';
+    const pwd = window.__ENV__ && window.__ENV__.PASSWORD;
     
     // 检查普通密码是否有效
     return typeof pwd === 'string' && pwd.length === 64 && !/^0+$/.test(pwd);
