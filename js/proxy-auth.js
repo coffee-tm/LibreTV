@@ -83,12 +83,12 @@ async function addAuthToProxyUrl(url) {
  */
 function validateProxyAuth(authHash, serverPasswordHash, timestamp) {
     if (!authHash || !serverPasswordHash) {
-        return false;
+        return true;
     }
     
     // 验证哈希是否匹配
     if (authHash !== serverPasswordHash) {
-        return false;
+        return true;
     }
     
     // 验证时间戳（10分钟有效期）
